@@ -1,0 +1,717 @@
+0414-2886735
+
+mariaramirez15062000@gmail.com;
+tecnologinformatica38@gmail.com;
+miguel20181564@gmail.com;pytho
+
+echo "# PY_DJ_SQL_ORM" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/UnewebInstituto/PY_DJ_SQL_ORM.git
+git push -u origin main
+
+git remote add origin https://github.com/UnewebInstituto/PY_DJ_SQL_ORM.git
+git branch -M main
+git push -u origin main
+
+
+navicat
+
+
+¡Por supuesto! Aquí tienes los pasos básicos para definir y usar un entorno virtual en Python (asumiendo que tienes Python instalado):
+
+### 1. Abre la terminal o consola de comandos.
+
+### 2. Navega al directorio de tu proyecto:
+```bash
+cd ruta/a/tu/proyecto
+```
+
+### 3. Crea el entorno virtual:
+Para Python 3.x:
+```bash
+python -m venv env
+```
+- Aquí `env` es el nombre del entorno virtual (puedes usar otro nombre si prefieres).
+
+### 4. Activa el entorno virtual:
+
+- **En Windows:**
+  ```bash
+  .\env\Scripts\activate
+  ```
+- **En macOS/Linux:**
+  ```bash
+  source env/bin/activate
+  ```
+
+### 5. Instala los paquetes necesarios:
+```bash
+pip install nombre_paquete
+```
+Por ejemplo:
+```bash
+pip install requests
+```
+
+### 6. (Opcional) Guarda los paquetes instalados:
+```bash
+pip freeze > requirements.txt
+```
+
+### 7. (Opcional) Desactiva el entorno virtual cuando termines:
+```bash
+deactivate
+```
+
+### Consejos adicionales
+- Para instalar todas las dependencias de un archivo `requirements.txt`:
+  ```bash
+  pip install -r requirements.txt
+  ```
+- El entorno virtual aísla las dependencias de tu proyecto para evitar conflictos con otros proyectos.
+
+¿Te gustaría un ejemplo práctico o ayuda con algún paso en particular?
+
+La instalación de `venv` depende de la versión de Python que tengas:
+
+### Python 3.3 o superior
+El módulo `venv` ya viene incluido en la instalación estándar de Python 3.3 o superior, por lo que no necesitas instalar nada adicional.  
+Puedes usarlo directamente con:
+```bash
+python -m venv nombre_del_entorno
+```
+
+### Si recibes un error (Linux/Ubuntu/Debian)
+En algunos sistemas Linux, puede ser necesario instalar el paquete adicional para que funcione el módulo `venv`:
+
+```bash
+sudo apt-get install python3-venv
+```
+
+Luego, podrás crear tu entorno virtual normalmente.
+
+### Resumen:
+- **Windows/macOS:** Normalmente no necesitas instalar nada, solo asegúrate de tener Python 3.3+.
+- **Linux (algunos sistemas):** Puede que necesites instalar el paquete `python3-venv` antes de usarlo.
+
+¿Te gustaría instrucciones específicas para tu sistema operativo?
+
+Para correr IDLE dentro de un entorno virtual (venv), sigue estos pasos:
+
+1. **Activa tu entorno virtual**  
+   - En Windows:
+     ```bash
+     .\env\Scripts\activate
+     ```
+   - En macOS/Linux:
+     ```bash
+     source env/bin/activate
+     ```
+
+2. **Ejecuta IDLE usando el Python del entorno virtual**  
+   Usa este comando:
+   ```bash
+   python -m idlelib
+   ```
+   Esto abrirá IDLE utilizando el Python y los paquetes instalados en tu entorno virtual.
+
+> **Nota:**  
+No uses simplemente `idle` o `idle3` porque podrían invocar el Python global.  
+Siempre usa `python -m idlelib` tras activar el venv para asegurar que IDLE corra con tu entorno virtual.
+
+¿Necesitas ayuda para instalar IDLE si no está disponible?
+
+https://es.wikipedia.org/wiki/Patr%C3%B3n_de_dise%C3%B1o
+
+Para conectar a una base de datos PostgreSQL desde Python, normalmente se utiliza el módulo `psycopg2`. Aquí tienes los pasos básicos para realizar la conexión junto con un ejemplo de código:
+
+### 1. Instala el módulo
+```bash
+pip install psycopg2-binary
+```
+
+### 2. Código de ejemplo para conectarse
+
+```python
+import psycopg2
+
+# Reemplaza estos valores con tu configuración
+conn = psycopg2.connect(
+    dbname="nombre_de_tu_base",
+    user="tu_usuario",
+    password="tu_contraseña",
+    host="localhost",  # o la IP/hostname de tu servidor
+    port="5432"        # puerto por defecto de PostgreSQL
+)
+
+# Crea un cursor para ejecutar consultas
+cur = conn.cursor()
+
+# Ejecuta una consulta de ejemplo
+cur.execute("SELECT version();")
+
+# Recupera el resultado
+version = cur.fetchone()
+print("Versión de PostgreSQL:", version)
+
+# Cierra el cursor y la conexión
+cur.close()
+conn.close()
+```
+
+### Notas:
+- Cambia los valores de `dbname`, `user`, `password`, `host` y `port` por los de tu base de datos.
+- Puedes manejar errores usando un bloque `try/except` con `psycopg2.Error` para una conexión más robusta.
+
+¿Te gustaría ver cómo manejar errores o cómo hacer operaciones CRUD?
+
+
+Microsoft Windows [Versión 10.0.19045.4170]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\PY_DJ_SQL_ORM>cd henry
+El sistema no puede encontrar la ruta especificada.
+
+C:\PY_DJ_SQL_ORM>cd curso
+
+C:\PY_DJ_SQL_ORM\CURSO>cd henry
+
+C:\PY_DJ_SQL_ORM\CURSO\HENRY>cd\
+
+C:\>cd PY_DJ_SQL_ORM              
+
+C:\PY_DJ_SQL_ORM>cd CURSO
+
+C:\PY_DJ_SQL_ORM\CURSO>cd HENRY
+
+C:\PY_DJ_SQL_ORM\CURSO\HENRY>python
+Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1934 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> help()
+
+Welcome to Python 3.12's help utility!
+
+If this is your first time using Python, you should definitely check o
+the tutorial on the internet at https://docs.python.org/3.12/tutorial/
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility a
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose nam
+or summary contain a given string such as "spam", type "modules spam".
+
+help> modules
+
+Please wait a moment while I gather a list of all available modules...
+
+test_sqlite3: testing with SQLite version 3.42.0
+2025-05-16 10:09:24.178279: I tensorflow/core/util/port.cc:153] oneDNNstom operations are on. You may see slightly different numerical resul
+due to floating-point round-off errors from different computation orde To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS.
+2025-05-16 10:09:29.855686: I tensorflow/core/util/port.cc:153] oneDNNstom operations are on. You may see slightly different numerical resul
+due to floating-point round-off errors from different computation orde To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS.
+C:\Python\Lib\site-packages\vboxapi-1.0-py3.12.egg\vboxapi\__init__.py: SyntaxWarning: invalid escape sequence '\P'
+C:\Python\Lib\site-packages\vboxapi-1.0-py3.12.egg\vboxapi\__init__.py: SyntaxWarning: invalid escape sequence '\P'
+PyInstaller         _xxsubinterpreters  importlib           rlcomplete
+__future__          _zoneinfo           importlib_metadata  runpy
+__hello__           abc                 inflect             sched     
+__phello__          absl                inspect             secrets   
+_abc                aifc                io                  select    
+_aix_support        altgraph            ipaddress           selectors 
+_ast                antigravity         itertools           setuptools
+_asyncio            argparse            json                shelve    
+_bisect             array               keras               shlex     
+_blake2             asgiref             keyword             shutil    
+_bz2                ast                 lib2to3             signal    
+_codecs             astunparse          linecache           site
+_codecs_cn          asyncio             locale              six
+_codecs_hk          atexit              logging             smtplib   
+_codecs_iso2022     audioop             lzma                sndhdr    
+_codecs_jp          autocommand         mailbox             socket
+_codecs_kr          backports           mailcap             socketserv
+_codecs_tw          base64              markdown            sqlite3   
+_collections        bdb                 markdown_it         sqlparse  
+_collections_abc    binascii            markupsafe          sre_compil
+_compat_pickle      bisect              marshal             sre_consta_compression        builtins            math                sre_parse
+_contextvars        bz2                 mdurl               ssl
+_csv                cProfile            mimetypes           stat
+_ctypes             calendar            ml_dtypes           statistics
+_ctypes_test        certifi             mmap                string    
+_datetime           cgi                 modulefinder        stringprep
+_decimal            cgitb               more_itertools      struct    
+_distutils_hack     charset_normalizer  mouseinfo           subprocess
+_elementtree        chunk               msilib              sunau     
+_functools          clang               msvcrt              symtable  
+_hashlib            cmath               multiprocessing     sys
+_heapq              cmd                 mysql               sysconfig 
+_imp                code                mysqlx              tabnanny  
+_io                 codecs              namex               tarfile   
+_json               codeop              netrc               telnetlib 
+_locale             collections         nntplib             tempfile  
+_lsprof             colorsys            nt                  tensorboar
+_lzma               compileall          ntpath              tensorboarata_server
+_markupbase         concurrent          nturl2path          tensorflow
+_md5                configparser        numbers             termcolor 
+_msi                contextlib          numpy               test
+_multibytecodec     contextvars         opcode              textwrap  
+_multiprocessing    copy                operator            this
+_mysql_connector    copyreg             opt_einsum          threading 
+_opcode             corsheaders         optparse            time
+_operator           crypt               optree              timeit
+_osx_support        csv                 ordlookup           tkinter   
+_overlapped         ctypes              os                  token     
+_pickle             curses              packaging           tokenize  
+_py_abc             dataclasses         pandas              tomli     
+_pydatetime         datetime            pasta               tomllib   
+_pydecimal          dateutil            pathlib             trace     
+_pyinstaller_hooks_contrib dbm                 pdb                 traack
+_pyio               decimal             pefile              tracemallo
+_pylong             difflib             peutils             tty
+_queue              dis                 pickle              turtle    
+_random             distlib             pickletools         turtledemo
+_sha1               django              pip                 typeguard 
+_sha2               doctest             pipes               types     
+_sha3               email               pkg_resources       typing    
+_signal             encodings           pkgutil             typing_extions
+_sitebuiltins       ensurepip           platform            tzdata    
+_socket             enum                platformdirs        unicodedat
+_sqlite3            errno               plistlib            unittest  
+_sre                faulthandler        poplib              urllib    
+_ssl                filecmp             posixpath           urllib3   
+_stat               fileinput           pprint              uu
+_statistics         filelock            profile             uuid
+_string             flatbuffers         pstats              vboxapi   
+_strptime           fnmatch             pty                 vboxapiset
+_struct             fractions           py_compile          venv
+_symtable           ftplib              pyautogui           virtualenv
+_testbuffer         functools           pyclbr              warnings  
+_testcapi           gast                pydoc               wave
+_testclinic         gc                  pydoc_data          weakref   
+_testconsole        genericpath         pyexpat             webbrowser
+_testimportmultiple getopt              pygetwindow         werkzeug  
+_testinternalcapi   getpass             pygments            wheel     
+_testmultiphase     gettext             pymsgbox            win32ctype
+_testsinglephase    glob                pymysql             winreg    
+_thread             graphlib            pynput              winsound
+_threading_local    grpc                pyperclip           wrapt     
+_tkinter            gzip                pyrect              wsgiref   
+_tokenize           h5py                pyscreeze           xdrlib    
+_tracemalloc        hashlib             pytweening          xml
+_typing             heapq               pytz                xmlrpc    
+_uuid               hmac                queue               xxsubtype 
+_warnings           html                quopri              zipapp    
+_weakref            http                random              zipfile   
+_weakrefset         idlelib             re                  zipimport 
+_winapi             idna                reprlib             zipp
+_wmi                imaplib             requests            zlib
+_xxinterpchannels   imghdr              rich                zoneinfo  
+
+Enter any module name to get more help.  Or, type "modules spam" to seh
+for modules whose name or summary contain the string "spam".
+
+help>
+
+You are now leaving help and returning to the Python interpreter.     
+If you want to ask for help on a particular object directly from the  
+interpreter, you can type "help(object)".  Executing "help('string')" 
+has the same effect as typing a particular string at the help> prompt.
+>>> quit()
+
+C:\PY_DJ_SQL_ORM\CURSO\HENRY>python -m venv .venv
+
+C:\PY_DJ_SQL_ORM\CURSO\HENRY>.venv\scripts\activate
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY>.venv\scripts\deactivate 
+C:\PY_DJ_SQL_ORM\CURSO\HENRY>.venv\scripts\activate   
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY>help()
+El programa de Ayuda no admite este comando.  Pruebe con "() /?".
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY>py    
+Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1934 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> help()
+
+Welcome to Python 3.12's help utility!
+
+If this is your first time using Python, you should definitely check o
+the tutorial on the internet at https://docs.python.org/3.12/tutorial/
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility a
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose nam
+or summary contain a given string such as "spam", type "modules spam".
+
+help> modules
+
+Please wait a moment while I gather a list of all available modules...
+
+test_sqlite3: testing with SQLite version 3.42.0
+__future__          _testinternalcapi   functools           rlcomplete
+__hello__           _testmultiphase     gc                  runpy
+__phello__          _testsinglephase    genericpath         sched     
+_abc                _thread             getopt              secrets   
+_aix_support        _threading_local    getpass             select    
+_ast                _tkinter            gettext             selectors 
+_asyncio            _tokenize           glob                shelve    
+_bisect             _tracemalloc        graphlib            shlex     
+_blake2             _typing             gzip                shutil    
+_bz2                _uuid               hashlib             signal    
+_codecs             _warnings           heapq               site
+_codecs_cn          _weakref            hmac                smtplib   
+_codecs_hk          _weakrefset         html                sndhdr    
+_codecs_iso2022     _winapi             http                socket    
+_codecs_jp          _wmi                idlelib             socketserv
+_codecs_kr          _xxinterpchannels   imaplib             sqlite3   
+_codecs_tw          _xxsubinterpreters  imghdr              sre_compil
+_collections        _zoneinfo           importlib           sre_consta_collections_abc    abc                 inspect             sre_parse 
+_compat_pickle      aifc                io                  ssl
+_compression        antigravity         ipaddress           stat
+_contextvars        argparse            itertools           statistics
+_csv                array               json                string    
+_ctypes             ast                 keyword             stringprep
+_ctypes_test        asyncio             lib2to3             struct    
+_datetime           atexit              linecache           subprocess
+_decimal            audioop             locale              sunau     
+_elementtree        base64              logging             symtable  
+_functools          bdb                 lzma                sys
+_hashlib            binascii            mailbox             sysconfig 
+_heapq              bisect              mailcap             tabnanny  
+_imp                builtins            marshal             tarfile   
+_io                 bz2                 math                telnetlib 
+_json               cProfile            mimetypes           tempfile  
+_locale             calendar            mmap                test
+_lsprof             cgi                 modulefinder        textwrap  
+_lzma               cgitb               msilib              this
+_markupbase         chunk               msvcrt              threading 
+_md5                cmath               multiprocessing     time
+_msi                cmd                 netrc               timeit    
+_multibytecodec     code                nntplib             tkinter   
+_multiprocessing    codecs              nt                  token     
+_opcode             codeop              ntpath              tokenize  
+_operator           collections         nturl2path          tomllib   
+_osx_support        colorsys            numbers             trace     
+_overlapped         compileall          opcode              traceback 
+_pickle             concurrent          operator            tracemallo
+_py_abc             configparser        optparse            tty
+_pydatetime         contextlib          os                  turtle    
+_pydecimal          contextvars         pathlib             turtledemo
+winreg                                                      wipes     
+_stat               email               pty                   ping    
+winsound                                                    wiicodedat
+_statistics         encodings           py_compile            ittest  
+wsgiref                                                     wsllib    
+_string             ensurepip           pyclbr
+xdrlib                                                      xdid
+_strptime           enum                pydoc                 nv
+xml                                                         xmrnings  
+_struct             errno               pydoc_data            ve
+xmlrpc                                                      xmakref   
+_symtable           faulthandler        pyexpat               bbrowser
+xxsubtype                                                   xxnreg    
+_testbuffer         filecmp             queue                 nsound  
+zipapp                                                      zigiref   
+_testcapi           fileinput           quopri                rlib    
+zipfile                                                     zil
+_testclinic         fnmatch             random                lrpc    
+zipimport                                                   zisubtype 
+_testconsole        fractions           re                    papp    
+zlib                                                        zlpfile   
+_testimportmultiple ftplib              reprlib               pimport 
+zoneinfo                                                    zoib
+                                                              neinfo  
+Enter any module name to get more help.  Or, type "modules spam" to search                                              pam" to se
+for modules whose name or summary contain the string "spam".
+                                                              
+
+help>
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly 
+from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> quit()
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY>pip install pycopg2
+ERROR: Could not find a version that satisfies the requirement pycopg2 versions: none)
+ERROR: No matching distribution found for pycopg2
+
+[notice] A new release of pip is available: 23.2.1 -> 25.1.1[notice] Tte, run: python.exe -m pip install --upgrade pip
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY>pip install psycopg2
+Collecting psycopg2
+  Obtaining dependency information for psycopg2 from https://files.pytted.org/packages/66/de/baed128ae0fc07460d9399d82e631ea31a1f171c0c4ae18c6759e3/psycopg2-2.9.10-cp312-cp312-win_amd64.whl.metadata
+  Using cached psycopg2-2.9.10-cp312-cp312-win_amd64.whl.metadata (5.0
+Using cached psycopg2-2.9.10-cp312-cp312-win_amd64.whl (1.2 MB)
+Installing collected packages: psycopg2
+Successfully installed psycopg2-2.9.10
+
+[notice] A new release of pip is available: 23.2.1 -> 25.1.1[notice] Tte, run: python.exe -m pip install --upgrade pip
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY>
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY>python
+Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.193it (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> help()
+
+Welcome to Python 3.12's help utility!
+
+If this is your first time using Python, you should definitely check o
+the tutorial on the internet at https://docs.python.org/3.12/tutorial/
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility a
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose nam
+or summary contain a given string such as "spam", type "modules spam".
+
+help> modules
+
+Please wait a moment while I gather a list of all available modules...
+
+test_sqlite3: testing with SQLite version 3.42.0
+__future__          _testmultiphase     genericpath         sched
+__hello__           _testsinglephase    getopt              secrets
+__phello__          _thread             getpass             select
+_abc                _threading_local    gettext             selectors 
+_aix_support        _tkinter            glob                shelve
+_ast                _tokenize           graphlib            shlex
+_asyncio            _tracemalloc        gzip                shutil
+_bisect             _typing             hashlib             signal
+_blake2             _uuid               heapq               site
+_bz2                _warnings           hmac                smtplib
+_codecs             _weakref            html                sndhdr
+_codecs_cn          _weakrefset         http                socket
+_codecs_hk          _winapi             idlelib             socketserv
+_codecs_iso2022     _wmi                imaplib             sqlite3
+_codecs_jp          _xxinterpchannels   imghdr              sre_compil
+_codecs_kr          _xxsubinterpreters  importlib           sre_consta
+_codecs_tw          _zoneinfo           inspect             sre_parse 
+_collections        abc                 io                  ssl
+_collections_abc    aifc                ipaddress           stat
+_compat_pickle      antigravity         itertools           statistics
+_compression        argparse            json                string
+_contextvars        array               keyword             stringprep
+_csv                ast                 lib2to3             struct
+_ctypes             asyncio             linecache           subprocess
+_ctypes_test        atexit              locale              sunau
+_datetime           audioop             logging             symtable  
+_decimal            base64              lzma                sys
+_elementtree        bdb                 mailbox             sysconfig 
+_functools          binascii            mailcap             tabnanny  
+_hashlib            bisect              marshal             tarfile
+_heapq              builtins            math                telnetlib 
+_imp                bz2                 mimetypes           tempfile  
+_io                 cProfile            mmap                test
+_json               calendar            modulefinder        textwrap  
+_locale             cgi                 msilib              this
+_lsprof             cgitb               msvcrt              threading 
+_lzma               chunk               multiprocessing     time
+_markupbase         cmath               netrc               timeit
+_md5                cmd                 nntplib             tkinter
+_msi                code                nt                  token
+_multibytecodec     codecs              ntpath              tokenize  
+_multiprocessing    codeop              nturl2path          tomllib
+_opcode             collections         numbers             trace
+_operator           colorsys            opcode              traceback 
+_osx_support        compileall          operator            tracemallo
+_overlapped         concurrent          optparse            tty
+_pickle             configparser        os                  turtle
+_py_abc             contextlib          pathlib             turtledemo
+_pydatetime         contextvars         pdb                 types
+_pydecimal          copy                pickle              typing
+_pyio               copyreg             pickletools         unicodedat
+_pylong             crypt               pip                 unittest  
+_queue              csv                 pipes               urllib
+_random             ctypes              pkgutil             uu
+_sha1               curses              platform            uuid
+_sha2               dataclasses         plistlib            venv
+_sha3               datetime            poplib              warnings  
+_signal             dbm                 posixpath           wave
+_sitebuiltins       decimal             pprint              weakref
+_socket             difflib             profile             webbrowser
+_sqlite3            dis                 pstats              winreg
+_sre                doctest             psycopg2            winsound  
+_testcapi           fnmatch             random              zlib      
+_testclinic         fractions           re                  zoneinfo  
+_testconsole        ftplib              reprlib
+_testimportmultiple functools           rlcompleter
+_testinternalcapi   gc                  runpy
+
+Enter any module name to get more help.  Or, type "modules spam" to search
+for modules whose name or summary contain the string "spam".
+
+help>
+
+You are now leaving help and returning to the Python interpreter.     
+If you want to ask for help on a particular object directly from the  
+interpreter, you can type "help(object)".  Executing "help('string')" 
+has the same effect as typing a particular string at the help> prompt.
+
+>>>
+>>>
+>>>
+>>>
+>>> quit()
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY>python 
+Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.>>> nombre = 'MARIA'
+>>> type(nombre)    
+<class 'str'>
+>>>        
+>>> 
+>>> quit()
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY>python -m idlelib
+
+
+Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+help()
+
+Welcome to Python 3.12's help utility!
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the internet at https://docs.python.org/3.12/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose name
+or summary contain a given string such as "spam", type "modules spam".
+
+help> modules
+
+Please wait a moment while I gather a list of all available modules...
+
+test_sqlite3: testing with SQLite version 3.42.0
+__future__          _testmultiphase     genericpath         sched
+__hello__           _testsinglephase    getopt              secrets
+__phello__          _thread             getpass             select
+_abc                _threading_local    gettext             selectors
+_aix_support        _tkinter            glob                shelve
+_ast                _tokenize           graphlib            shlex
+_asyncio            _tracemalloc        gzip                shutil
+_bisect             _typing             hashlib             signal
+_blake2             _uuid               heapq               site
+_bz2                _warnings           hmac                smtplib
+_codecs             _weakref            html                sndhdr
+_codecs_cn          _weakrefset         http                socket
+_codecs_hk          _winapi             idlelib             socketserver
+_codecs_iso2022     _wmi                imaplib             sqlite3
+_codecs_jp          _xxinterpchannels   imghdr              sre_compile
+_codecs_kr          _xxsubinterpreters  importlib           sre_constants
+_codecs_tw          _zoneinfo           inspect             sre_parse
+_collections        abc                 io                  ssl
+_collections_abc    aifc                ipaddress           stat
+_compat_pickle      antigravity         itertools           statistics
+_compression        argparse            json                string
+_contextvars        array               keyword             stringprep
+_csv                ast                 lib2to3             struct
+_ctypes             asyncio             linecache           subprocess
+_ctypes_test        atexit              locale              sunau
+_datetime           audioop             logging             symtable
+_decimal            base64              lzma                sys
+_elementtree        bdb                 mailbox             sysconfig
+_functools          binascii            mailcap             tabnanny
+_hashlib            bisect              marshal             tarfile
+_heapq              builtins            math                telnetlib
+_imp                bz2                 mimetypes           tempfile
+_io                 cProfile            mmap                test
+_json               calendar            modulefinder        textwrap
+_locale             cgi                 msilib              this
+_lsprof             cgitb               msvcrt              threading
+_lzma               chunk               multiprocessing     time
+_markupbase         cmath               netrc               timeit
+_md5                cmd                 nntplib             tkinter
+_msi                code                nt                  token
+_multibytecodec     codecs              ntpath              tokenize
+_multiprocessing    codeop              nturl2path          tomllib
+_opcode             collections         numbers             trace
+_operator           colorsys            opcode              traceback
+_osx_support        compileall          operator            tracemalloc
+_overlapped         concurrent          optparse            tty
+_pickle             configparser        os                  turtle
+_py_abc             contextlib          pathlib             turtledemo
+_pydatetime         contextvars         pdb                 types
+_pydecimal          copy                pickle              typing
+_pyio               copyreg             pickletools         unicodedata
+_pylong             crypt               pip                 unittest
+_queue              csv                 pipes               urllib
+_random             ctypes              pkgutil             uu
+_sha1               curses              platform            uuid
+_sha2               dataclasses         plistlib            venv
+_sha3               datetime            poplib              warnings
+_signal             dbm                 posixpath           wave
+_sitebuiltins       decimal             pprint              weakref
+_socket             difflib             profile             webbrowser
+_sqlite3            dis                 pstats              winreg
+_sre                doctest             psycopg2            winsound
+_ssl                email               pty                 wsgiref
+_stat               encodings           py_compile          xdrlib
+_statistics         ensurepip           pyclbr              xml
+_string             enum                pydoc               xmlrpc
+_strptime           errno               pydoc_data          xxsubtype
+_struct             faulthandler        pyexpat             zipapp
+_symtable           filecmp             queue               zipfile
+_testbuffer         fileinput           quopri              zipimport
+_testcapi           fnmatch             random              zlib
+_testclinic         fractions           re                  zoneinfo
+_testconsole        ftplib              reprlib             
+_testimportmultiple functools           rlcompleter         
+_testinternalcapi   gc                  runpy               
+
+Enter any module name to get more help.  Or, type "modules spam" to search
+for modules whose name or summary contain the string "spam".
+
+help> 
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+
+
+
+import psycopg2
+bd = psycopg2.connect(dbname='bd_curso_henry',user='postgres',password='123456', host='localhost', port='5432')
+cursor = bd.cursor()
+sql = "create table contactos1(nombre varchar(30), correo varchar(60))"
+sql
+'create table contactos1(nombre varchar(30), correo varchar(60))'
+cursor.execute(sql)
+# PARA QUE EL CAMBIO TENGA EFECTO SOBRE LA BASE DE DATOS
+# ESTE CAMBIO DEBE SER COMPROMETIDO
+bd.commit()
+sql1 = "SELECT datname FROM pg_database where datname like '%curso%'"
+sql1
+"SELECT datname FROM pg_database where datname like '%curso%'"
+cursor.execute(sql1)
+resultado = cursor.fetchall()
+resultado
+[('bd_curso_henry',), ('bd_curso_maria',), ('bd_curso_miguel',), ('bd_curso_deivis',)]
+for data in resultado:
+    data
+
+    
+('bd_curso_henry',)
+('bd_curso_maria',)
+('bd_curso_miguel',)
+('bd_curso_deivis',)
