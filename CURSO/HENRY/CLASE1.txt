@@ -1,8 +1,9 @@
+HENRY DUQUE
 0414-2886735
 
 mariaramirez15062000@gmail.com;
 tecnologinformatica38@gmail.com;
-miguel20181564@gmail.com;pytho
+miguel20181564@gmail.com;python
 
 echo "# PY_DJ_SQL_ORM" >> README.md
 git init
