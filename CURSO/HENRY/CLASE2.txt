@@ -1,0 +1,243 @@
+Server [localhost]:
+Database [postgres]:
+Port [5432]:
+Username [postgres]:
+Contraseña para usuario postgres:
+psql (16.3)
+ADVERTENCIA: El código de página de la consola (850) difiere del código
+            de página de Windows (1252).
+            Los caracteres de 8 bits pueden funcionar incorrectamente.
+            Vea la página de referencia de psql «Notes for Windows users»
+            para obtener más detalles.
+Digite «help» para obtener ayuda.
+
+postgres=# \l
+                                                                              Listado de base de datos         Nombre         |  Due±o   | Codificaci¾n | Proveedor de locale |        Collate         |         Ctype          | configuraci¾n ICU | Reglas ICU: |      Privilegios
+------------------------+----------+--------------+---------------------+------------------------+------------------------+-------------------+-------------+-----------------------
+ 1A                     | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ Camioneros             | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ Empresa                | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd02                   | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20231209_diego       | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20231209_henry       | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20231209_manuelt     | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20231209_ricardo     | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_henry1      | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_m_henry     | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_m_henry1    | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_m_luis      | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_m_luis1     | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_m_rafael    | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_m_rafael1   | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_t_henry     | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_t_ronald    | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_t_ronald1   | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_t_uandy     | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd20240610_t_uandy1    | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_00                  | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_0000                | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_01                  | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_03                  | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_curso_deivis        | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_curso_henry         | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_curso_maria         | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_curso_miguel        | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ic_dannysa          | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ic_dannysa_r        | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ic_henry            | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ic_henry_r          | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ic_orlanys          | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ic_orlanys_r        | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ig_dannysa          | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ig_dannysa_r        | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ig_dannysa_r1       | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ig_henry            | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ig_henry_r          | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ig_henry_r1         | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ig_orlanys          | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_ig_orlanys_r1       | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_nivel2_carla        | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_nivel2_dannysa      | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_nivel2_henry        | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ bd_nivel2_orlanys      | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ camiones_test          | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ db_ig_orlanys_r        | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ dvdrental              | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ ejercicio1             | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ gbd20231209_diego      | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ gbd20231209_henry      | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ gbd20231209_manuelt    | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ gbd20231209_ricardo    | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ mascota                | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ personas_dc            | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ personas_eb            | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ personas_hd            | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ personas_hd1           | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ personas_jp            | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ personas_md            | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ postgres               | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ prueba                 | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ prueba_carrito_zayleth | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ shopping_cart          | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ template0              | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             | =c/postgres          +
+                        |          |              |                     |                        |                        |                   |             | postgres=CTc/postgres
+ template1              | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             | =c/postgres          +
+                        |          |              |                     |                        |                        |                   |             | postgres=CTc/postgres
+ transporte             | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+ tst_clase_02           | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+(69 filas)
+
+
+postgres=#
+postgres=#
+postgres=#
+postgres=# \l *maria*
+                                                                     Listado de base de datos
+     Nombre     |  Due±o   | Codificaci¾n | Proveedor de locale |        Collate         |         Ctype          | configuraci¾n ICU | Reglas ICU: | Privilegios
+----------------+----------+--------------+---------------------+------------------------+------------------------+-------------------+-------------+-------------
+ bd_curso_maria | postgres | UTF8         | libc                | Spanish_Venezuela.1252 | Spanish_Venezuela.1252 |                   |             |
+(1 fila)
+
+
+postgres=# \c bd_curso_henry
+Ahora está conectado a la base de datos «bd_curso_henry» con el usuario «postgres».
+bd_curso_henry=#
+
+
+1) INSTALACIÓN DE DJANGO:
+Desde un entorno virtual ejecutar 
+pip install django
+
+2)CREACIÓN DE UN proyecto
+Desde el entorno virtual, donde fue instalado django, se ejecuta 
+el comando:
+django-admin startproject proyecto
+
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY\desarrollo>python manage.py help 
+
+Type 'manage.py help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[auth]
+    changepassword
+    createsuperuser
+
+[contenttypes]
+    remove_stale_contenttypes
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    optimizemigration
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+
+[sessions]
+    clearsessions
+
+[staticfiles]
+    collectstatic
+    findstatic
+    runserver
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY\desarrollo>
+
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY\desarrollo>python manage.py help runserver
+usage: manage.py runserver [-h] [--ipv6] [--nothreading] [--noreload]
+                           [--nostatic] [--insecure] [--version]
+                           [--settings SETTINGS]
+                           [--pythonpath PYTHONPATH] [--no-color]
+                           [--force-color] [--skip-checks]
+                           [addrport]
+
+Starts a lightweight web server for development and also serves static     
+files.
+
+positional arguments:
+  addrport              Optional port number, or ipaddr:port
+
+options:
+  -h, --help            show this help message and exit
+  --ipv6, -6            Tells Django to use an IPv6 address.
+  --nothreading         Tells Django to NOT use threading.
+  --noreload            Tells Django to NOT use the auto-reloader.
+  --nostatic            Tells Django to NOT automatically serve static     
+                        files at STATIC_URL.
+  --insecure            Allows serving static files even if DEBUG is       
+                        False.
+  --version             Show program's version number and exit.
+  --settings SETTINGS   The Python path to a settings module, e.g.
+                        "myproject.settings.main". If this isn't
+                        provided, the DJANGO_SETTINGS_MODULE environment   
+                        variable will be used.
+  --pythonpath PYTHONPATH
+                        A directory to add to the Python path, e.g.        
+                        "/home/djangoprojects/myproject".
+  --no-color            Don't colorize the command output.
+  --force-color         Force colorization of the command output.
+  --skip-checks         Skip system checks.
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY\desarrollo>
+
+asume el rol desarrollador python django, dame la configuración del archivo setting, parametro  databases para acceder a una base de datos postgresql
+
+3) LEVANTAR EL PROYECTO BASE 
+python manage.py runserver 8001
+
+
+
+Claro, aquí tienes un ejemplo de cómo configurar el parámetro DATABASES en el archivo settings.py de un proyecto Django para conectarte a una base de datos PostgreSQL:
+
+```python name=settings.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'nombre_base_de_datos',
+        'USER': 'usuario',
+        'PASSWORD': 'contraseña',
+        'HOST': 'localhost',  # o la IP/hostname de tu servidor de base de datos
+        'PORT': '5432',       # puerto por defecto de PostgreSQL
+    }
+}
+```
+
+Reemplaza los valores de 'NAME', 'USER', y 'PASSWORD' por los datos correspondientes a tu base de datos PostgreSQL. Si tu servidor de base de datos está en otro host o puerto, actualiza también 'HOST' y 'PORT' según corresponda.
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'nombre_base_de_datos',
+        'USER': 'usuario',
+        'PASSWORD': 'contraseña',
+        'HOST': 'localhost',  # o la IP/hostname de tu servidor de base de datos
+        'PORT': '5432',       # puerto por defecto de PostgreSQL
+    }
+}
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY\desarrollo>python manage.py createsuperuser --username=admin --email=admin@uneweb.edu.ve
+
+PASSWORD:
+12345678.
