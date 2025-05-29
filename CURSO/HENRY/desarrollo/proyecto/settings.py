@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+# Se importa para acceder a la ruta en entorno windows
+import os.path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -51,10 +53,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'proyecto.urls'
 
+# Se actualiza el argumento DIRS, para ubicar la ruta del proyecto
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(os.path.dirname(__file__), 
+'templates').replace('\\','/'),], 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,6 +130,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Ubicación de la ruta para nuestros archivos estáticos
+STATICFILES_DIRS = [ BASE_DIR / "proyecto/static", ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

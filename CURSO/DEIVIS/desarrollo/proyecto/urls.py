@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path
 
 from proyecto.views import hola, otro_hola, obtener_fecha_hora
-
+from proyecto.views import inicio, ingresar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("saludos/", hola),
     path("otrosaludo/", otro_hola),
-    path("fechahora/", obtener_fecha_hora)
+    path("fechahora/", obtener_fecha_hora),
+    path('', inicio),
+    path("ingresar/", ingresar),
 ]

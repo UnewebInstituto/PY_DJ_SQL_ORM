@@ -20,10 +20,14 @@ from django.urls import path
 from proyecto.views import hola
 from proyecto.views import otro_hola
 from proyecto.views import obtener_fecha_hora
+from proyecto.views import inicio
+from proyecto.views import ingresar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', hola),
     path('otrosaludo/', otro_hola),
-    path('fechahora/', obtener_fecha_hora), 
+    path('fechahora/', obtener_fecha_hora),
+    path('', inicio), 
+    path('ingresar/', ingresar) 
 ]

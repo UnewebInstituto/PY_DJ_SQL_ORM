@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 import datetime
-
+from django.shortcuts import render
 def hola(request):
     return HttpResponse("<h1> Hola estimados alumnos de UNEWEB<h1>")
 
@@ -38,3 +38,12 @@ def obtener_fecha_hora(request):
     ahora= datetime.datetime.now()
     mostrar_ahora = "<h2>"+ str(ahora) + "</h2>"
     return HttpResponse(mostrar_ahora)
+
+
+def inicio(request):
+    print("se ejecuto inicio")
+    return render(request, 'index.html')
+
+def ingresar(request):
+    print("se ejecuto inicio")
+    return render(request, 'ingresar.html')

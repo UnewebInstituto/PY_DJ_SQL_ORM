@@ -1,0 +1,56 @@
+Librerías de CSS:
+CASCADING STYLE SHEET 
+HOJAS DE ESTILO CASCADA 
+
+BOOTSTRAP 
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+https://bootstrapmade.com/
+
+TAILWIND 
+https://tailwindcss.com/
+
+
+https://www.w3schools.com/
+
+Ejecución:
+python manage.py runserver número_puerto 
+
+En caso de no indicarse el puerto inicia por el 
+puerto 8000
+
+
+(.venv) C:\PY_DJ_SQL_ORM\CURSO\HENRY\desarrollo>python manage.py shell
+6 objects imported automatically (use -v 2 for details).
+Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>>
+
+
+HENRY\desarrollo>python manage.py shell       
+6 objects imported automatically (use -v 2 forr details).
+Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 20023, 13:03:39) [MSC v.1935 64 bit (AMD64)] onw win32
+Type "help", "copyright", "credits" or "licensse" for more information.
+(InteractiveConsole)
+>>> from __future__ import print_function     
+>>> from django import template
+>>> t = template.Template('Mi nombre es:{{nombbre}}...')
+>>> c = template.Context({'nombre':'ANA'})    
+>>> print(t.render(c))
+Mi nombre es:ANA...
+>>>
+
+
+En informática, CDN significa "Content Delivery Network" (Red de Distribución de Contenido) y es un sistema de servidores distribuidos geográficamente que se utilizan para entregar contenido web de forma más rápida y eficiente a los usuarios. Al almacenar copias de archivos (caché) en servidores cercanos a los usuarios, las CDN minimizan la latencia y mejoran la experiencia del usuario al reducir el tiempo de carga de las páginas web. 
+
+boostrap 
+
+https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css
+
+https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js
+
+En Visual Studio Code, Emmet es un complemento que permite escribir abreviaturas de código HTML y CSS, que luego se expanden a código completo. Esto acelera el proceso de codificación y reduce el número de teclas a presionar. 
+
+
+https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
