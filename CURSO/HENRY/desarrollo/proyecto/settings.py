@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'personas'
 ]
 
 MIDDLEWARE = [
@@ -131,7 +132,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# Ubicación de la ruta para nuestros archivos estáticos
+# Ubicación de la ruta para nuestros archivos estáticosdir
 STATICFILES_DIRS = [ BASE_DIR / "proyecto/static", ]
 
 # Default primary key field type

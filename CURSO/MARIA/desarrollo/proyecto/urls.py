@@ -19,6 +19,8 @@ from django.urls import path
 from proyecto.views import hola , otro_hola, obtener_fecha_hora
 from proyecto.views import inicio
 from proyecto.views import ingresar
+from proyecto.views import ingresar01
+
 
 
 urlpatterns = [
@@ -26,9 +28,7 @@ urlpatterns = [
     path("saludo/", hola),
     path("otrosaludo/", otro_hola),
     path("fechahora/", obtener_fecha_hora),
-    path("", inicio),
-    path("ingresar/", ingresar)
-
-
-
+    path('', inicio),
+    path('ingresar/', ingresar),
+    path('ingresar01/', ingresar01)
 ]

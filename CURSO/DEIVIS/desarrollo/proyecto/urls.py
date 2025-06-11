@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 from proyecto.views import hola, otro_hola, obtener_fecha_hora
-from proyecto.views import inicio, ingresar
+from proyecto.views import inicio, ingresar, ingresar01
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +27,5 @@ urlpatterns = [
     path("fechahora/", obtener_fecha_hora),
     path('', inicio),
     path("ingresar/", ingresar),
+    path("ingresar01/", ingresar01),
 ]

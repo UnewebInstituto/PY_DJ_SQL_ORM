@@ -1,7 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 import datetime
-
+from django.db import IntegrityError
+from personas.models import Persona
 
 def hola(request):
   return HttpResponse('<h1>hola estimados alumnos de UNEWEB</h1>')
@@ -47,3 +48,26 @@ def inicio(request):
 
 def ingresar(request):
   return render(request, 'ingresar.html')
+
+
+def ingresar01(request):
+      if request.method == 'POST':
+        try:
+            #Obtener datos del formulario
+            vced = request.POST.get('cedula')
+            vnom = request.POST.get('nombre')
+            vape = request.POST.get('apellido')
+            vtel = request.POST.get('telefono')
+            vdir = request.POST.get('direccion')
+            vcor = request.POST.get('correo')
+            vfna = request.POST.get('fecha_nacimiento')
+            # Se crea el objeto a partir de la clase Persona
+            persona_tmp = Persona(cedula=vced, nombre=vnom, apellido=vape, telefono=vtel,direccion=vdir, correo=vcor, fecha_nacimiento=vfna)
+            # Guardar en BBDD
+            persona_tmp.save()
+            # Se genera el mensaje informativo de aprobación
+            mensaje = 'El registro fue almacenado con éxito'
+        except IntegrityError as e:
+            # Se genera el mensaje informativo de error
+            mensaje = 'Error: El registro no pudo ser almacenado'
+        return render(request, 'ingresar.html',{'mensaje':mensaje})
